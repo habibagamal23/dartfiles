@@ -113,9 +113,13 @@ List<int> l4 = [10, 20 ,50];
 // }
 
 
-dynamic x ="h";
+var listt= [12, 4 ,5];
+
 try{
-  print(x+1);
+  for(int i=0 ; i <=2; i++){
+    print(listt[i]);
+
+  }
 }catch(e){
   print("my error : $e");
 }
