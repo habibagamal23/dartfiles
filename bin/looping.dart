@@ -6,12 +6,12 @@ void main(List<String> arguments) {
   // for(int i =1 ; i<=5 ; i++){
   //   print(i);
   // }
-
-  int i =0;
-  while(i<5){
-    print(i);
-    i++;
-  }
+  //
+  // int i =0;
+  // while(i<5){
+  //   print(i);
+  //   i++;
+  // }
 
 // while even
 
@@ -34,14 +34,33 @@ void main(List<String> arguments) {
   //
   // }
 
-int num =5;
-  int fac = 1;
-  while(num>0){
-    fac= fac*num;
-    num--;
+// int num =5;
+//   int fac = 1;
+//   while(num>0){
+//     fac= fac*num;
+//     num--;
+//   }
+//   print(fac);
 
-  }
-  print(fac);
+//
+// int w=10;
+//   do{
+//     print(w);
+//     w++;
+//   }while(w<5);
+//
+//
+// List <int> mylist= [1,2,3,4];
+// for (int i in mylist ){
+//   print(i);
+// }
+List <String> myl= ["mai", 'Habiba'];
+
+for(String s in myl){
+
+  print("welcom $s");
+}
+
 
 
 }
