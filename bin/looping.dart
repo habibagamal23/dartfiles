@@ -105,11 +105,22 @@ List<int> l4 = [10, 20 ,50];
 // }
 
 
-for(int i =0 ;i< l4.length; i++){
-  if(l4[i]==50){
-    print("found in index $i");
-    break;
-  }
+// for(int i =0 ;i< l4.length; i++){
+//   if(l4[i]==50){
+//     print("found in index $i");
+//     break;
+//   }
+// }
+
+
+dynamic x ="h";
+try{
+  print(x+1);
+}catch(e){
+  print("my error : $e");
 }
+
+print("habiba");
+
 
 }
