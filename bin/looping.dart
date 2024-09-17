@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void main(List<String> arguments) {
 
   //1 , 5
@@ -10,6 +12,17 @@ void main(List<String> arguments) {
    print(i);
  }
   }
+
+  for(int i =1 ; i<=2 ; i++){
+    int num =int.parse(stdin.readLineSync()!);
+    if (num>0){
+      print("pos");
+    }else{
+      print("neg");
+    }
+
+  }
+
 
 
 
