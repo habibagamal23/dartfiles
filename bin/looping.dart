@@ -54,13 +54,62 @@ void main(List<String> arguments) {
 // for (int i in mylist ){
 //   print(i);
 // }
-List <String> myl= ["mai", 'Habiba'];
+//
+// List <String> myl= ["mai", 'Habiba'];
+// for(String s in myl){
+//   print("welcom $s");
+// // }
+//
+// var l1 = ["a", "b", "c"];
+// var l2 =["d" , "g" ,"f"];
+//
+//
+// for(int i =0 ; i<l1.length ; i++ ){
+//   for(int j=0 ; j<l2.length; j++){
+//     print(l1[i]+l2[j]);
+//   }
+//
+// }
 
-for(String s in myl){
+// var listnum = [1,2,3];
+//
+// for(int i =0 ; i<listnum.length; i++){
+//   for(int j = i+1 ; j<listnum.length ; j++){
+//     print(listnum[i]+listnum[j]);
+//   }
+//
+// }
+//3
+//4
+//5
 
-  print("welcom $s");
+
+
+// for(int i =0 ; i<5; i++){
+//
+//   if (i==3){
+//     continue;
+//   }
+//   print("number $i");
+//
+// }
+//
+//
+//
+List<int> l4 = [10, 20 ,50];
+// for(int i in l4){
+//   if(i==50){
+//     print('found');
+//     break;
+//   }
+// }
+
+
+for(int i =0 ;i< l4.length; i++){
+  if(l4[i]==50){
+    print("found in index $i");
+    break;
+  }
 }
-
-
 
 }
