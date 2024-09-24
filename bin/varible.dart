@@ -1,30 +1,32 @@
-import 'dart:math';
+class Car {
+  String model;
+  String color;
 
-void main() {
-Doctor dr = Doctor("Ahmed", "eye");
-Doctor d2 = Doctor.withpayment("noor", "eye", 700);
+  static Car? _instance;
 
+  Car._create(this.model, this.color);
+
+  factory Car(String model, String color) {
+    if (_instance == null) {
+      _instance = Car._create(model, color);
+      print("Creating new car: $model, $color");
+    } else {
+      print("Returning existing car: ${_instance!.model}, ${_instance!.color}");
+    }
+    return _instance!;
+  }
+
+  void showDetails() {
+    print("Car Model: $model, Color: $color");
+  }
 }
 
+void main() {
+  var car1 = Car("Tesla", "Red");
+  car1.showDetails();
 
-class Doctor {
-  String? name;
-  String? sep;
-  int pay= 300;
-  Doctor(String name , String sepp){
-    this.name=name;
-    sep= sepp;
-    print("${this.name} $sep , $pay");
-  }
+  var car2 = Car("BMW", "Blue");
+  car2.showDetails();
 
-  Doctor.withpayment(String name , String sepp , int paymen){
-    this.name=name;
-    sep= sepp;
-    pay=paymen;
-
-    print("${this.name} $sep , $pay");
-  }
-
-
-
+  print(identical(car1, car2));
 }
